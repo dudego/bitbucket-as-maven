@@ -1,0 +1,183 @@
+ext.deps = [:]
+
+def versions = [:]
+
+versions.applicationId = "com.bitbucketrepo.asmaven"
+versions.buildTools = "27.0.3"
+versions.minSdk = 21
+versions.targetSdk = 28
+versions.compileSdk = 28
+versions.versionCode = 1
+versions.versionName = "1.0"
+versions.debugVersionNameSuffix = "-SNAPSHOT"
+versions.debugApplicationIdSuffix = ".debug"
+
+versions.kotlin = "1.2.50"
+versions.ktlint = "0.10.0"
+versions.rxlint = "1.6.1"
+versions.android_gradle_plugin= "3.3.0-alpha06"
+versions.play_publisher_gradle_plugin="1.2.2"
+versions.dexcount_gradle_plugin = "0.8.3"
+versions.spotless_gradle_plugin = "3.13.0"
+versions.versions_gradle_plugin="0.20.0"
+versions.fabric_gradle_plugin="1.25.4"
+versions.dagger = "2.16"
+versions.constraint_layout = "1.1.2"
+versions.supportx = '1.0.0-alpha3'
+versions.testdep = '1.1.0-alpha3'
+versions.multidex = "2.0.0"
+versions.paging = "2.0.0-beta01"
+versions.retrofit = "2.4.0"
+versions.okhttp_logging_interceptor = "3.10.0"
+versions.moshi_lazy_adapter = "2.2"
+versions.moshi_kotlin = '1.6.0'
+versions.timber = "4.7.0"
+versions.room = "2.0.0-alpha1"
+versions.lifecycle = "2.0.0-alpha1"
+versions.rx_android = "2.0.2"
+versions.rxjava2 = "2.1.15"
+versions.robolectric = "4.0-alpha-2"
+versions.junit = "4.12"
+versions.androidx_core= "2.0.0-alpha1"
+versions.espresso = "3.1.0-alpha3"
+versions.filepicker = "1.1.1"
+versions.lazythreetenbp = "0.3.0"
+versions.rxkotlin = "2.2.0"
+versions.mockito = "2.19.0"
+versions.stetho = "1.5.0"
+versions.coroutines = "0.23.3"
+versions.epoxy = "2.16.0"
+ext.versions = versions
+
+
+def dagger = [:]
+
+dagger.core = "com.google.dagger:dagger:$versions.dagger"
+dagger.compiler = "com.google.dagger:dagger-compiler:$versions.dagger"
+dagger.android_support = "com.google.dagger:dagger-android-support:$versions.dagger"
+dagger.compiler_android = "com.google.dagger:dagger-android-processor:$versions.dagger"
+
+ext.dagger = dagger
+
+//def epoxy = [:]
+//epoxy.core = "com.airbnb.android:epoxy:$versions.epoxy"
+//epoxy.paging = "com.airbnb.android:epoxy-paging:$versions.epoxy"
+//epoxy.databinding = "com.airbnb.android:epoxy-databinding:$versions.epoxy"
+//epoxy.compiler = "com.airbnb.android:epoxy-processor:$versions.epoxy"
+//
+//ext.epoxy = epoxy
+
+def supportx =[:]
+supportx.appcompat = "androidx.appcompat:appcompat:$versions.supportx"
+supportx.material = "com.google.android.material:material:$versions.supportx"
+supportx.vector_drawable = "androidx.vectordrawable:vectordrawable:$versions.supportx"
+supportx.cardview = "androidx.cardview:cardview:$versions.supportx"
+supportx.recyclerview = "androidx.recyclerview:recyclerview:$versions.supportx"
+supportx.legacy_support = "androidx.legacy:legacy-support-v4:$versions.supportx"
+supportx.ktx = "androidx.core:core-ktx:$versions.supportx"
+
+ext.supportx = supportx
+
+def room = [:]
+room.runtime = "androidx.room:room-runtime:$versions.room"
+room.rxjava2 = "androidx.room:room-rxjava2:$versions.room"
+room.compiler = "androidx.room:room-compiler:$versions.room"
+room.common = "androidx.room:room-common:$versions.room"
+
+ext.room = room
+
+def paging = [:]
+paging.runtime = "androidx.paging:paging-runtime:$versions.paging"
+paging.common = "androidx.paging:paging-common:$versions.paging"
+paging.rxjava2 = "androidx.paging:paging-rxjava2:$versions.paging"
+ext.paging = paging
+
+def lifecycle = [:]
+
+lifecycle.runtime = "androidx.lifecycle:lifecycle-runtime:$versions.lifecycle"
+lifecycle.extensions = "androidx.lifecycle:lifecycle-extensions:$versions.lifecycle"
+lifecycle.reactivestreams = "androidx.lifecycle:lifecycle-reactivestreams:$versions.lifecycle"
+lifecycle.compiler = "androidx.lifecycle:lifecycle-compiler:$versions.lifecycle"
+
+ext.lifecycle = lifecycle
+
+def retrofit = [:]
+retrofit.runtime = "com.squareup.retrofit2:retrofit:$versions.retrofit"
+retrofit.mock = "com.squareup.retrofit2:retrofit-mock:$versions.retrofit"
+retrofit.moshi = "com.squareup.retrofit2:converter-moshi:$versions.retrofit"
+retrofit.rxadapter = "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit"
+
+ext.retrofit = retrofit
+
+def stetho = [:]
+stetho.runtime = "com.facebook.stetho:stetho:$versions.stetho"
+stetho.okhttp = "com.facebook.stetho:stetho-okhttp3:$versions.stetho"
+stetho.timber = "com.facebook.stetho:stetho-timber:$versions.stetho"
+
+ext.stetho = stetho
+
+def testdep = [:]
+testdep.runner = "androidx.test:runner:$versions.testdep"
+testdep.rules = "androidx.test:rules:$versions.testdep"
+testdep.core = "androidx.test:core:$versions.testdep"
+
+ext.testdep = testdep
+
+def coroutines = [:]
+coroutines.runtime = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines"
+coroutines.rxjava2 = "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$versions.coroutines"
+
+ext.coroutines = coroutines
+
+deps.moshi_lazy_adapter = "com.serjltt.moshi:moshi-lazy-adapters:$versions.moshi_lazy_adapter"
+deps.okhttp_logging_interceptor = "com.squareup.okhttp3:logging-interceptor:$versions.okhttp_logging_interceptor"
+deps.junit = "junit:junit:$versions.junit"
+deps.mockito = "org.mockito:mockito-core:$versions.mockito"
+deps.multidex = "androidx.multidex:multidex:$versions.multidex"
+deps.robolectric = "org.robolectric:robolectric:$versions.robolectric"
+deps.rxlint = "nl.littlerobots.rxlint:rxlint:$versions.rxlint"
+deps.rxkotlin = "io.reactivex.rxjava2:rxkotlin:$versions.rxkotlin"
+deps.moshi_kotlin = "com.squareup.moshi:moshi-kotlin:$versions.moshi_kotlin"
+deps.moshi_runtime = "com.squareup.moshi:moshi:$versions.moshi_kotlin"
+deps.lazythreetenbp = "com.gabrielittner.threetenbp:lazythreetenbp:$versions.lazythreetenbp"
+deps.filepicker = "com.github.angads25:filepicker:$versions.filepicker"
+deps.timber = "com.jakewharton.timber:timber:$versions.timber"
+deps.constraint_layout = "androidx.constraintlayout:constraintlayout:$versions.constraint_layout"
+deps.rxjava2 = "io.reactivex.rxjava2:rxjava:$versions.rxjava2"
+deps.rx_android = "io.reactivex." + "rxj" + "ava2:rxandroid:$versions.rx_android"
+deps.kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin"
+deps.kotlin_reflect = "org.jetbrains.kotlin:kotlin-reflect:$versions.kotlin"
+deps.espresso = "androidx.test.espresso:espresso-core:$versions.espresso"
+
+deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
+deps.kotlin_gradle_plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+deps.play_publisher_gradle_plugin = "com.github.triplet.gradle:play-publisher:$versions.play_publisher_gradle_plugin"
+deps.dexcount_gradle_plugin = "com.getkeepsafe.dexcount:dexcount-gradle-plugin:$versions.dexcount_gradle_plugin"
+deps.versions_gradle_plugin = "com.github.ben-manes:gradle-versions-plugin:$versions.versions_gradle_plugin"
+deps.spotless_gradle_plugin = "com.diffplug.spotless:spotless-plugin-gradle:$versions.spotless_gradle_plugin"
+deps.fabric_gradle_plugin = "io.fabric.tools:gradle:$versions.fabric_gradle_plugin"
+
+ext.deps = deps
+
+def framework = [:]
+framework.package="com.bitbucketrepo.asmaven"
+framework.artifact_packaging="aar"
+framework.company="sahdudej"
+framework.repository="bitbucket-maven-framework"
+ext.framework = framework
+
+def addRepos(RepositoryHandler handler) {
+    handler.google()
+    handler.jcenter()
+    handler.maven { url "https://plugins.gradle.org/m2/" }
+    handler.maven { url "https://maven.fabric.io/public" }
+    handler.maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    handler.maven {
+        credentials {
+            username FRAMEWORK_USERNAME
+            password FRAMEWORK_PASSWORD
+        }
+        url "https://api.bitbucket.org/1.0/repositories/$framework.company/$framework.repository/raw/releases"
+    }
+}
+ext.addRepos = this.&addRepos
