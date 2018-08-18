@@ -38,7 +38,7 @@ artifacts {
 task lookForArtifacts {
     doLast {
         def artifactName = ARTIFACT_NAME + '-' + ARTIFACT_VERSION + '.aar'
-        def artifactPath = framework.package.replace(".", "/") + "/" + ARTIFACT_NAME + "/" + ARTIFACT_VERSION + "/" + artifactName
+        def artifactPath = framework.packagename.replace(".", "/") + "/" + ARTIFACT_NAME + "/" + ARTIFACT_VERSION + "/" + artifactName
         def repositoryUrl = 'https://api.bitbucket.org/1.0/repositories/' + framework.company + '/' + framework.repository + '/raw/releases/' + artifactPath
 
         println("")
@@ -66,7 +66,7 @@ uploadArchives {
         uniqueVersion = true
 
         pom.project {
-            groupId = framework.package
+            groupId = framework.packagename
             version = ARTIFACT_VERSION
             artifactId = ARTIFACT_NAME
             packaging framework.artifact_packaging

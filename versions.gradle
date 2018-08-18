@@ -160,7 +160,7 @@ deps.fabric_gradle_plugin = "io.fabric.tools:gradle:$versions.fabric_gradle_plug
 ext.deps = deps
 
 def framework = [:]
-framework.package="com.bitbucketrepo.asmaven"
+framework.packagename="com.bitbucketrepo.asmaven"
 framework.artifact_packaging="aar"
 framework.company="sahdudej"
 framework.repository="bitbucket-maven-framework"

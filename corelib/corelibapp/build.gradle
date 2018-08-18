@@ -83,8 +83,10 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':corelibrary')
     implementation deps.kotlin
     implementation supportx.appcompat
+    implementation deps.constraint_layout
     testImplementation deps.junit
     androidTestImplementation testdep.runner
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'

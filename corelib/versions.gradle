@@ -2,7 +2,7 @@ ext.deps = [:]
 
 def versions = [:]
 
-versions.applicationId = "np.hamronagarpalika"
+versions.applicationId = "com.bitbucketrepo.asmaven"
 versions.buildTools = "27.0.3"
 versions.minSdk = 21
 versions.targetSdk = 28
@@ -158,6 +158,13 @@ deps.spotless_gradle_plugin = "com.diffplug.spotless:spotless-plugin-gradle:$ver
 deps.fabric_gradle_plugin = "io.fabric.tools:gradle:$versions.fabric_gradle_plugin"
 
 ext.deps = deps
+
+def framework = [:]
+framework.packagename="com.bitbucketrepo.asmaven"
+framework.artifact_packaging="aar"
+framework.company="sahdudej"
+framework.repository="bitbucket-maven-framework"
+ext.framework = framework
 
 def addRepos(RepositoryHandler handler) {
     handler.google()
