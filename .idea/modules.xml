@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/application/app/app.iml" filepath="$PROJECT_DIR$/application/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application/application.iml" filepath="$PROJECT_DIR$/application/application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bitbucket-as-maven.iml" filepath="$PROJECT_DIR$/bitbucket-as-maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/corelib/corelib.iml" filepath="$PROJECT_DIR$/corelib/corelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/corelib/corelibapp/corelibapp.iml" filepath="$PROJECT_DIR$/corelib/corelibapp/corelibapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/corelib/corelibrary/corelibrary.iml" filepath="$PROJECT_DIR$/corelib/corelibrary/corelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uilib/uilib.iml" filepath="$PROJECT_DIR$/uilib/uilib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uilib/uilibapp/uilibapp.iml" filepath="$PROJECT_DIR$/uilib/uilibapp/uilibapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uilib/uilibrary/uilibrary.iml" filepath="$PROJECT_DIR$/uilib/uilibrary/uilibrary.iml" />
+    </modules>
+  </component>
+</project>
