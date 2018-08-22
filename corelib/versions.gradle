@@ -162,7 +162,7 @@ ext.deps = deps
 def framework = [:]
 framework.packagename="com.bitbucketrepo.asmaven"
 framework.artifact_packaging="aar"
-framework.company="sahdudej"
+framework.company="dudego"
 framework.repository="bitbucket-maven-framework"
 ext.framework = framework
 
