@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply from: '../../upload.gradle'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion versions.compileSdk
+    defaultConfig {
+        minSdkVersion versions.minSdk
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//        }
+//    }
+
+}
+
+dependencies {
+    implementation supportx.appcompat
+    implementation deps.timber
+    implementation dagger.core
+    implementation deps.kotlin
+
+    implementation "com.bitbucketrepo.asmaven:lib-core:0.0.1-alpha1"
+
+    testImplementation deps.junit
+    androidTestImplementation testdep.runner
+    androidTestImplementation deps.espresso
+}
