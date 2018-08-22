@@ -28,7 +28,7 @@ dependencies {
     implementation dagger.core
     implementation deps.kotlin
 
-    implementation "com.bitbucketrepo.asmaven:lib-core:0.0.1-alpha1"
+    implementation "com.bitbucketrepo.asmaven:lib-core:0.0.3-alpha1"
 
     testImplementation deps.junit
     androidTestImplementation testdep.runner

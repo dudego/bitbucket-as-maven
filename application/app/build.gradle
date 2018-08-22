@@ -23,7 +23,7 @@ android {
 
     defaultConfig {
 
-        applicationId "${versions.applicationId}.ui.app"
+        applicationId "${versions.applicationId}"
 
         minSdkVersion versions.minSdk
         targetSdkVersion versions.targetSdk
@@ -83,9 +83,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':uilibrary')
-    implementation "com.bitbucketrepo.asmaven:lib-core:0.0.3-alpha1"
     implementation deps.kotlin
+    implementation "com.bitbucketrepo.asmaven:lib-core:0.0.3-alpha1"
+    implementation "com.bitbucketrepo.asmaven:lib-ui:0.0.3-alpha1"
     implementation supportx.appcompat
     implementation deps.constraint_layout
     testImplementation deps.junit
