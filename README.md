@@ -3,9 +3,9 @@
 ### Intro
 A sample project which resolves library dependency from bitbucket as maven. This project can be imported in Android Studio as single project or different projects containing:
 
-  - corelib - containing two modules 'corelibrary' and 'corelibapp'
-  - uilib - containing two modules 'uilibrary' and 'uilibapp'
-  - application - containing single module 'app'
+  - **corelib** - containing two modules 'corelibrary' and 'corelibapp'
+  - **uilib** - containing two modules 'uilibrary' and 'uilibapp'
+  - **application** - containing single module 'app'
    
 'corelibrary' and 'uilibrary' are two library modules and their aar are uploaded as artifacts on bitbucket as maven.
 
@@ -34,7 +34,7 @@ $ ./gradlew :corelib:corelibrary assembleRelease uploadArchives
     USERNAME=<username_here>
     PASSWORD=<password_here>
     ```
-  - Initialize bitbtbuckt repo with name defined above (bitbucket-maven-framework) with *'release'* as main branch. Check [this link](https://stackoverflow.com/questions/37550492/how-to-change-the-main-branch-in-bitbucket) for details.
+  - Initialize bitbtbucket repo with name defined above (bitbucket-maven-framework) with *'release'* as main branch. Check [this link](https://stackoverflow.com/questions/37550492/how-to-change-the-main-branch-in-bitbucket) for details.
   - Open 'corelib' project and edit *'corelibrary/gradle.properties'* to set 
     ```
     ARTIFACT_VERSION=0.0.3-alpha1 //version number
