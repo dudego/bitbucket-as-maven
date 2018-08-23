@@ -29,10 +29,10 @@ $ ./gradlew :corelib:corelibrary assembleRelease uploadArchives
     framework.company="dudego" //bitbucket username or company name
     framework.repository="bitbucket-maven-framework" //repository name
     ```
- - Create *gradle.properties* in global .gradle folder on your system with the following parameters 
+ - Create/update user level gradle.properties in GRADLE_USER_HOME directory and add following parameters
     ```
-    USERNAME=<username_here>
-    PASSWORD=<password_here>
+    FRAMEWORK_USERNAME=<username_here>
+    FRAMEWORK_PASSWORD=<password_here>
     ```
   - Initialize bitbtbucket repo with name defined above (bitbucket-maven-framework) with *'release'* as main branch. Check [this link](https://stackoverflow.com/questions/37550492/how-to-change-the-main-branch-in-bitbucket) for details.
   - Open 'corelib' project and edit *'corelibrary/gradle.properties'* to set 
@@ -40,7 +40,7 @@ $ ./gradlew :corelib:corelibrary assembleRelease uploadArchives
     ARTIFACT_VERSION=0.0.3-alpha1 //version number
     ARTIFACT_NAME=lib-core //name of artifact
     ```
-  - Upload artifact buy executing
+  - Upload artifact by executing
     ```sh
     $ ./gradlew :corelib:corelibrary assembleRelease uploadArchives
     ```
@@ -48,7 +48,7 @@ $ ./gradlew :corelib:corelibrary assembleRelease uploadArchives
 
 ### Importing Artifact
 
-To resolve dependeny add Maven repository to the list of repositories in your main build.gradle file:
+To resolve dependency add Maven repository to the list of repositories in your main build.gradle file:
 
 ```groovy
 allprojects {
